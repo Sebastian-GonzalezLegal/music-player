@@ -1,0 +1,139 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para el contenedor principal */
+.container{
+    background-color: #212936;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: none;
+}
+
+.container.active {
+    display: block;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+}
+
+.reproductor {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+}
+
+div {
+    margin: 0.8em;
+}
+
+.btn {
+    background-color: #212936;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+    margin: 0.5em;
+}
+
+
+#play-btn {
+    background-color: #C93B76;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 7px rgba(230, 148, 148, 0.1);
+}
+
+#play-btn:hover {
+    background-color: #e478a5;
+}
+
+#play-btn2 {
+    background-color: #C93B76;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 7px rgba(230, 148, 148, 0.1);
+}
+
+#play-btn2:hover {
+    background-color: #e478a5;
+}
+
+
+.btn:hover {
+    background-color: #293444;
+}
+
+#pause-svg {
+    display: none;
+}
+
+#pause-svg2 {
+    display: none;
+}
+
+
+.audio-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.progress-bar {
+    width: 210px;
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.progress {
+    margin-left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d32cb7;
+    border-radius: 5px;
+}
